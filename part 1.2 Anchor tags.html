@@ -1,0 +1,78 @@
+<!----------------->
+<!-------* HTML ANCHOR TAG-ATTRIBUTES-------->
+<!--*href: Specifies the URL or destination the link points to. *-->
+
+<!--*target: Specifies where the linked content will be displayed (e.g.,blank for a new window/tab) *-->
+<!--*title: provide additional details when hovering over the link *-->
+
+<!--when we hit on the link then the link will move to the link in the same , but if you  want to 
+kept your site in a tab and open the link on another tab then this target tab will help.
+{<a href="link..." target="_blank" title-"write about the link">}.
+ This will kept your website as it is and move you to another tab when you click on the link.
+The title tag is used to give the idea about the link.
+-->
+
+<!--*download: Suggest that the target will be downloaded when clicked *-->
+
+ 
+<!--*rel: Describe the relationship between the current page and the linked page *-->
+
+
+
+<!--*id: Assign a unique identifier to the anchor for linking within the page *-->
+
+<!--*class: Assign a class for stylling or javascript interaction *-->
+
+<!--*tabindex: Specifies the tab order when navigating using the keyboard *-->
+
+<!--*accesskey: Defines the keyboard shortcut to activate the link *-->
+
+<!--*aria: Attributes for accessibility purpose(e.g., aria-label) *-->
+
+<!--* *-->
+<!--*===============INTERVIEW QUESTIONS============= *-->
+<!--* *-->
+
+<!--*1.How can you create a link within the same webpage that takes the user to a specific section
+or element on the page? *-->
+<!--ANSWER:::to create a link that takes the user to a specific section or element within the
+same webpage, we can use the anchor(a) tag's href attribute along with the id attribute of
+the target element using the # symbol-->
+
+<!--*2.What is the difference between ralative and absolute URLs in the href attributes *-->
+<!--ANSWER: Relative URLs are URLs that are relative to the current page's URL.
+Absolute URLs are complete URLs, including the protect (http/https) and domain.
+in relative url we write the complete url address but in case of the relative url 
+we donot write the complete url-->
+
+<!--*3.How does the download attribute work in the anchor tag. *-->
+<!--ANSWER: The download attributes suggest that the linked resource should be downloaded instead of 
+navigated to, prompting the user to download the file.-->
+
+<!-- 4. When we use quotes, when not to???? and when we should use the single quote and when double quote-->
+ <!--When we write a single attribute it ok to write it without a quote,
+ but in case when use more than one attribute we have to write it inside the quote
+ you can use either single quote or double quote but the mixer of both is not possible
+ that means if you start with double quote then you must have to end with double quote
+  instead of single quote..
+  but you can use quote inside another quote like "hello'how are you'are you fine"-->
+ <a href=https://www.google.com>favorite website</a><!--in this case if we are not writing the quote its ok-->
+<br>
+ <a href="https://www.mozilla.org/" title="The mozilla homepage">best website to learn html</a>
+ <!--In this case there is more than one attributes thats why we have to write it inside the quotes-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="face image.jpeg" download>download</a><!--this url of image is relative url-->
+    <br>
+    <a href="C:\Users\pabitra ojha\OneDrive\Pictures\Saved Pictures\face image.jpeg" download>download2</a>
+    <!-- hear the link does not work but the path refers to absolute url cause it is the complete path-->
+    
+</body>
+</html>

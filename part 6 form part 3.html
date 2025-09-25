@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <h1>Complex Form</h1>
+        <fieldset>
+            <legend>Personal information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+            <label for="email">email:</label>
+            <input type="email" id="email">
+            <label for="phone">phone:</label>
+            <input type="tel" id="phone">
+            <label for="datepicker">Date of birth</label>
+            <input type="date" id="datepicker">
+            <label >Gender::</label>
+            <input type="radio" name="radio" id="radio1">
+            <label for="radio1">Male</label>
+             <input type="radio" name="radio" id="radio2">
+            <label for="radio2">Female</label>
+            <label for="dropdown" >country::</label>
+            <select name="dropdown" id="dropdown">
+                <option value="uk">Uk</option>
+                <option value="india">india</option>
+                <option value="pak">pak</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Address</legend>
+            <label for="street">Street::</label>
+             <input type="text" id="street">
+             <label for="City">City::</label>
+             <input type="City" id="City">
+             <label for="state">State:</label>
+             <input type="state" id="state">
+             <label for="zipcode">zipcode::</label>
+             <input type="number" id="zipcode">
+        </fieldset>
+
+        <fieldset>
+            <legend>Other information</legend>
+            <label for="text">comment</label>
+           <textarea name="comment" id="text" rows="5" cols="50" placeholder="write something..."></textarea>
+            <label for="terms">I agree to the terms and conditions</label>
+           <input type="checkbox" id="terms">
+        </fieldset>
+        <input type="submit" value="submit" >
+    </form>
+</body>
+</html>

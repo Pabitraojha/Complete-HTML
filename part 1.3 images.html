@@ -1,0 +1,59 @@
+<!--TODO DEPRECATED ATTRIBUTES OF HTML IMAGES-->
+<!--align, border, hspace, vspace-->
+
+<!--What not to do??-->
+<!--❌ <img alt="image" src="face image.png"-->
+<!-- ✅<img alt="my face image" src="face image.png" .... means more details about the image-->
+
+
+<!--INTERVIEW QUESTIONS-->
+<!--1. How would you make an image responsive using the width attributes?
+ans.you can set the width attribute to a percentage value(e.g. width="100%") to 
+make the image adjust its width based on hte available space-->
+
+<!--2.How do you create an image link using the <img> tag??
+ans. you wrap the <img> tag with an anchor <a> tag and provide the href attribute in the <a> tag.-->
+
+<!--3.What is the difference between the relative and absolute URLs in the href attribute?
+ans.Relative urls are urls that are relative to the current page, while absolute urls are 
+complete URLs that include the protocol (e.g. http://) and the domain name. -->
+
+<!--4.Why is providing the alt text for images important?It improves...
+ans. accessibility for users with visual impairments and helps search engines
+ understand image content -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="./images/flower.png" alt="image" style="max-width: 250px;;">
+    <!--hear we added style for responsive image-->
+    <a href="https://www.google.com" target="_blank">
+        <img src="./images/Scenery.png"
+         alt="Scenery pictures"
+         width="100%"
+          height="auto"
+         title="Beautiful Scenery, if you want to see the image just click on it"
+         loading="lazy">
+
+    </a>
+
+    <img src="./images/flower.png" alt="Flower"
+    usemap="#map"
+    width="250"
+    height="150" >
+
+    <map name="map">
+        <area
+         shape="rect"
+         coords="0,0,125,150"
+         href="https://www.youtube.com/"
+         alt="youtube link">
+    </map>
+</body>
+</html>

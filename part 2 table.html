@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     </head>
+           <body>
+    <!-- table is nothing but the arrangement of data contain rows , columns and cell-->
+     <!--basic tags used for table making 
+     1.<table> -used to create table
+     2.<tr> -used to create table row
+    3.<td> -used to write table data or cell
+     4.<thead> -used to write the row in the header formatt
+    5.<th> used to create heading
+    6.<tbody> -actual content kept in tbody
+    7.<tfoot> -summerize data
+    8. <caption> -used to write the title of the table 
+    9. we use simple rowsapn="value" and colspan="value" to expand rows and columns-->
+      <h1>Example 1</h1>  
+      <img src="https://tse2.mm.bing.net/th/id/OIP.UuRv2mO0gg5wVr0JcuUXiAAAAA?pid=Api&P=0&h=180" alt="image to create table">
+
+        <br>
+        <br>
+        <br>
+   <table border="1" width="100%" height="100%">
+    <caption>Student details</caption>
+    <!-- <caption> is used to write the title of the table-->
+    <thead>
+        <th>Student id</th>
+        <th>Student name</th>
+        <th>Gender</th>
+        <th>Age</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1234</td>
+        <td>Bablu</td>
+        <td>male</td>
+        <td>21</td>
+    </tr>
+    <tr>
+        <td>1235</td>
+        <td>gudu</td>
+        <td>male</td>
+        <td>17</td>
+    </tr>
+    <tr>
+        <td>1236</td>
+        <td>Ram</td>
+        <td>male</td>
+        <td rowspan="2">  __ </td>
+    </tr>
+    <tr>
+        <td>1237</td>
+        <td>Sita</td>
+        <td>female</td>
+        
+    </tr>
+    </tbody>
+   </table>
+   <!-- we use rowspan and colspan to expand rows and columns-->
+   <br>
+   <br>
+   <h1>Example 2</h1>
+   <img src="https://cdn.educba.com/academy/wp-content/uploads/2019/10/Create-Tables-in-HTML.png" alt="table image 2">
+    
+   <br>
+    <br>
+     <br> <br>
+   <table border = "1" width ="100%" height="100%">
+        <tbody>
+            <tr>
+            <td>column 1</td>
+            <td>column 2</td>
+            <td>column 3</td>
+            
+        </tr>
+        <tr>
+            <td rowspan="2">row 1 cell 1</td>
+            <td>row 1 cell 2</td>
+            <td>row 1 cell 3</td>
+        </tr>
+        <tr>
+            <td>row 2 cell 3</td>
+            <td>row 2 cell 3</td>
+        </tr>
+        <tr>
+            <td colspan="3">row 3 cell 1</td>
+        </tr>
+    </table>
+
+    <br> <br> <br> <br>
+
+    <h1>Example 3</h1>
+        <img src="https://i0.wp.com/programmingdigest.com/wp-content/uploads/how-to-create-table-in-html-example-2.png?w=1366&ssl=1" alt="table 3">
+        <br>
+        <br>
+    <p>Product list</p>
+    <table border = "1">
+      <thead>
+        <th>Item</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Extended</th>
+      </thead>
+      <tbody>
+        <tr>
+            <td>Hard disk</td>
+            <td>1</td>
+            <td>500$</td>
+            <td>400$</td>
+        </tr>
+        <tr>
+            <td>Cd drive</td>
+            <td>1</td>
+            <td>200$/td>
+            <td>500$</td>
+        </tr>
+        <tr>
+            <td>Cds</td>
+            <td>10</td>
+            <td>20$</td>
+            <td>50$</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+            <td colspan="3">Total amount</td>
+            <td>950$</td>
+        </tr>
+      </tfoot>
+
+
+        
+        
+    </table>
+
+
+
+
+
+
+
+</body>
+</html>

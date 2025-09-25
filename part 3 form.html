@@ -1,0 +1,180 @@
+<!-- tags used for creation of a form
+ 1. <form> is used to create html form to user input
+ 2. <input> is used to take input from the user (using textfield , Radio button , check box, date picker etc)
+ 3. <label> is used to represent the box type
+ 4. <select> is used for drop down manu
+ 5. <option> is used to create option for drop down menu
+ 6. <button> is used to create button
+ 7. <testarea> is used to write a large comment or allows users to enter multiple lines of text.
+ 8. <fieldset> is used to grouping of element
+ 9. <legend> is used to give caption
+ 10. dropdown(<select> and <options>)-provides a list of options for users to choose from
+ 11. datalist and option-provides a predefiend list of options foe autocomplete sugesstions.
+
+    "" with the help of input tag we can create ""
+    a. textfield
+    b. button
+    c. radio
+    d. checkbox
+    e. file select
+    f. image
+    g. password field
+    h. date picker etc........-->
+
+<!--<input type="text" name="username">
+    hear input is a tag and the type and name are attribute of input tag.
+    we have multiple value for type attribute.
+    1.text-allows user to input single line of text.
+    2.email-validates and formats input as an email addresee.
+    3.password-Hides the entered text for secure password entry.
+    4.number-accept numeric input and provides increment/decrement controls.
+    5.radio-allows users to choose a single option from a group of options by giving same name.
+    6.checkbox-allows users to select multiple options.
+    7.range-
+    8. date-for datepicker for to select date.
+    9.time-to select time
+    10.file-allows users to choose and upload files from their device.
+    11.submit-submit the form.
+    12.color-to select color
+    13.url-validate and formats input as URL.
+    14.search- provides a search input field with a clear button.
+    15. month-allows users to select a month and year .
+    16. week- allows users to select a specific week.
+    -->    
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Basic of form</title>
+    </head>
+    <body>
+        <form >
+            <fieldset>
+                <legend>Dummy HTML form</legend><!--legend-->
+        <fieldset><!--fieldset-->
+             <legend>basic input for form</legend>
+             <label for="e-mail">enter e-mail:</label>
+            
+            <!--for name of label should be equal to the id name of input tag-->
+        
+            <input type="email" id="e-mail"
+            placeholder="enter your email"
+            name="email" required 
+            autocomplete="off" 
+             size="50"
+              value="pabitraojha.444@gmail.com" 
+              pattern="[a-z0-9._%+-]@[a-z0-9._%+-]u"
+              readonly
+              disabled
+            >
+            <!-- the value of name stored in the database that is why name attribute is important -->
+            <br><br>
+            <div>
+             <label for="range">RANGE:</label>
+             <input type="range" name="volume" min="0" max="100" value="50">
+             </div>
+             <br>
+             <br>
+             <label for="password">enter password:</label> 
+            <input type="text" id="password" placeholder="enter your password" required>
+            <!-- hear required is an attribute for must fill -->
+             <!--place holder used to create faded taxt-->
+            <br> <br>
+             <input type="submit" value="click here">
+
+             <!-- submit is used to submit the form-->
+              <button>submit</button>
+             
+             </fieldset>
+        
+        <label for="country">select a country</label>     
+        <input type="text" id="country" name="country" list="countries">
+        <datalist  id="countries">
+             <option value="maggi">kurkure</option>
+            <option value="yipee">maggi</option>
+            <option value="kurkure">chips</option>
+        </datalist>
+
+      <br>
+      <div>
+        <label for="datepicker">choose date</label>
+        <input type="date" id="datepicker">
+      </div>
+        <div>
+         <label for="Release time">select time</label>
+        <input type="time" id="Release time">
+      </div>
+
+      <div>
+         <label for="select color">favorite color</label>
+        <input type="color" id="select color">
+      </div>
+
+      <div>
+         <label for="website url">website</label>
+        <input type="url" id="website url" placeholder="enter website url">
+      </div>
+      <br>
+      <div>
+         <label for="search query">searchQuery:</label>
+        <input type="search" id="search query">
+      </div>
+      <br>
+       <div>
+         <label for="expirydate">month & year:</label>
+        <input type="month" id="expirydate" >
+      </div>
+      <br>
+       <div>
+         <label for="week">vacation week:</label>
+        <input type="week" id="week" >
+      </div>
+    
+
+
+      
+      
+
+<br> <br> <br>
+        <label for="11">choose your dishes</label>
+        <select name="dishes" id="11">
+            <option value="maggi">kurkure</option>
+            <option value="yipee">maggi</option>
+            <option value="kurkure">chips</option>
+        </select>
+<br> <br> <br>
+<!-- div vs span -->
+ <h3>lets see <div style="color: red;">div tags</div> </h3>
+ <h3>lets see <span style="color:blue">span tags</span></h3>
+  
+        
+
+ <br/> <br/>
+      <button>hit me I am buttton</button>
+
+      <br> <br>
+      <label for="123">please share your thaught and oppinion</label>
+      <textarea name="write something" id="123" cols =30 rows =10 placeholder="write something...."></textarea>
+      <!--textarea-->
+
+  </fieldset>
+  </form>
+    </body>
+</html>
+
+<!-- INTERVIEW QUESTIONS -->
+ <!-- 1.Difference between ID and Class attribute??
+ ans- Multiple element in HTML can have the same class value,
+ where as a value of the id attribute must be unique.
+
+ 2.Difference between Div and Span tag?
+ ans-<div></div> stands for division. it is a block level element and it 
+ creates a block level container that typically represents a section or division of content. 
+ creates a new line before and after itself by default.
+
+  <span></span> it is an inline elment. it doesnot create a newline. It is used for applying
+  styles to specific parts of text within a larger block of content.
+  Doesn't create any visual change by default. it is used for applying CSS styles or scripting.
+  -->
